@@ -1,8 +1,12 @@
-public interface Parking {
-    static int nombrePlaces = 100;
-    static int voiturePlace = 1;
-    
-    static int berlinPlaces = 2;
-    static int camionPlaces = 4;
+ class Parking {
 
-}
+     private int placeRestante = 100;
+
+     public int getPlaceRestante() {
+         return placeRestante;
+     }
+
+     public void setPlaceRestante(int placeRestante) {
+         this.placeRestante = this.placeRestante - placeRestante ;
+     }
+ }
